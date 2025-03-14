@@ -1,6 +1,6 @@
 
 void main(){
-  print(longestCommonPrefix(["flower","flow","flight"]));
+  print(longestCommonPrefix(["fawefawefawefvwaefv","fawefawefawevfawefv","fawefawefawevfawvewf","fawefaweffavwefvawv","fawefawefafwevfawev", 'fawefawefawfefvawev','fawefawefwaefvwevfa']));
 }
 
 String longestCommonPrefix(List<String> strs) {
@@ -22,7 +22,7 @@ String longestCommonPrefix(List<String> strs) {
   for(String s in first){
     for(int i = 1; i < strList.length ; ++i){
       if(curIndex > strList[i].length) break;
-      matched = strList[i][curIndex] == first[curIndex];    
+      matched = strList[i][curIndex] == first[curIndex];
     }
     if(matched){
       retStr += first[curIndex++];
