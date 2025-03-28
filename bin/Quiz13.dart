@@ -1,4 +1,3 @@
-
 int majorityElement(List<int> nums) {
   Map<int,int> numsMap = {};
   for(int num in nums){
