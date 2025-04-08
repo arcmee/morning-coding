@@ -4,7 +4,6 @@ bool isAnagram(String s, String t) {
   Map<String, int> compareMap = numbersOfWord(t);
 
   for(String key in baseMap.keys){
-    print('${baseMap[key]}, ${compareMap[key]}');
     if(baseMap[key] != compareMap[key]){
       return false;
     }
