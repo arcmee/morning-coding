@@ -7,7 +7,7 @@ bool wordPattern(String pattern, String s) {
   for(int i = 0; i < pattern.length; ++i){
     if(!compareMap.containsKey(pattern[i])){
       if(!compareMap.containsValue(words[i])){
-        compareMap.addAll({pattern[i] : words[i]});
+        compareMap[pattern[i]] = words[i];
       } else {
         return false;
       }
